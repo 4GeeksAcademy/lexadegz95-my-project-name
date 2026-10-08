@@ -2,11 +2,258 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>This is what shows in the tab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fbf7f5">
+    <title>Sofie's Drone World</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #292322;
+        --muted: #776b68;
+        --rose: #a94f62;
+        --rose-dark: #843c4d;
+        --paper: #fbf7f5;
+        --line: #eadfdb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        color: var(--ink);
+        background: linear-gradient(135deg, #fbf7f5 0%, #f4e9e6 100%);
+        font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+      }
+
+      .site-header {
+        position: relative;
+        z-index: 1;
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 253, 252, 0.94);
+      }
+
+      .nav-shell {
+        display: flex;
+        width: min(1120px, calc(100% - 48px));
+        min-height: 82px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 42px;
+        aspect-ratio: 1;
+        place-items: center;
+        border: 1px solid #d8b7b8;
+        border-radius: 50%;
+        color: var(--rose-dark);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 16px;
+      }
+
+      .brand-name {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 20px;
+      }
+
+      .brand-name span {
+        display: block;
+        margin-top: 3px;
+        color: var(--muted);
+        font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+        font-size: 10px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+      }
+
+      .nav-toggle {
+        display: none;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        background: transparent;
+        color: var(--ink);
+        cursor: pointer;
+      }
+
+      .nav-toggle span {
+        display: block;
+        height: 2px;
+        margin: 5px 0;
+        background: currentColor;
+      }
+
+      .primary-nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        gap: 34px;
+        list-style: none;
+      }
+
+      .primary-nav a {
+        color: var(--muted);
+        font-size: 14px;
+        text-decoration: none;
+        transition: color 160ms ease;
+      }
+
+      .primary-nav a:hover,
+      .primary-nav a:focus-visible,
+      .primary-nav a[aria-current="page"] {
+        color: var(--rose-dark);
+      }
+
+      .primary-nav a[aria-current="page"] {
+        font-weight: 600;
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--rose);
+        outline-offset: 4px;
+      }
+
+      main {
+        display: grid;
+        min-height: calc(100vh - 83px);
+        padding: 64px 24px;
+        place-items: center;
+        text-align: center;
+      }
+
+      .welcome {
+        max-width: 680px;
+      }
+
+      .eyebrow {
+        color: var(--rose-dark);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 16px 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(38px, 6vw, 64px);
+        font-weight: 400;
+        line-height: 1.08;
+      }
+
+      .welcome p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 680px) {
+        .nav-shell {
+          width: min(100% - 32px, 1120px);
+          min-height: 72px;
+          flex-wrap: wrap;
+          gap: 0;
+        }
+
+        .nav-toggle {
+          display: block;
+        }
+
+        .primary-nav {
+          display: none;
+          width: 100%;
+          padding: 0 0 16px;
+        }
+
+        .primary-nav.is-open {
+          display: block;
+        }
+
+        .primary-nav ul {
+          align-items: stretch;
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .primary-nav a {
+          display: block;
+          padding: 12px 4px;
+          border-top: 1px solid var(--line);
+        }
+
+        main {
+          min-height: calc(100vh - 73px);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
   </head>
-  
-  <body style="background: pink; color: #0b0303"> 
-    <h1>Hello World</h1>
-    <p>This is a simple HTML document.</p>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#home" aria-label="Sofie's Drone World home">
+          <span class="brand-mark" aria-hidden="true">SD</span>
+          <span class="brand-name">Sofie's Drone World<span>A view from above</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="home">
+      <section class="welcome" aria-labelledby="welcome-heading">
+        <p class="eyebrow">A new perspective</p>
+        <h1 id="welcome-heading">Welcome to my world of drones</h1>
+        <p>Thoughtful flights. Beautiful views. A little wonder from above.</p>
+      </section>
+    </main>
+    <script>
+      const menuButton = document.querySelector(".nav-toggle");
+      const navigation = document.querySelector(".primary-nav");
+
+      menuButton.addEventListener("click", () => {
+        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+        menuButton.setAttribute("aria-expanded", String(!isOpen));
+        menuButton.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+        navigation.classList.toggle("is-open", !isOpen);
+      });
+    </script>
   </body>
 </html>
