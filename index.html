@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f6e9e8" />
+    <meta name="theme-color" content="#fbf8f5" />
     <meta
       name="description"
-      content="Meet Sofie, a drone pilot and aerial artist creating thoughtful flights, cinematic imagery, and live experiences."
+      content="Sofie is a drone photographer and videographer specializing in real estate, business content, and live sporting events."
     />
-    <title>Sofie | Drone Pilot &amp; Aerial Artist</title>
+    <meta
+      name="keywords"
+      content="drone photographer, drone videographer, aerial photography, real estate photography, drone video, sports photography"
+    />
+    <meta name="author" content="Sofie" />
+    <title>Sofie | Drone Photographer &amp; Videographer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,15 +25,20 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "@id": "#sofie",
         "name": "Sofie",
-        "jobTitle": "Drone Pilot and Aerial Artist",
-        "description": "A drone pilot creating thoughtful flights, cinematic aerial imagery, and live experiences.",
+        "jobTitle": "Drone Photographer and Videographer",
+        "description": "Professional drone photographer and videographer specializing in real estate, business content, and live sporting events.",
         "knowsAbout": [
-          "Aerial photography",
-          "Drone piloting",
-          "Live flight demonstrations"
-        ]
+          "Drone Photography",
+          "Aerial Videography",
+          "Real Estate Photography",
+          "Business Marketing Content",
+          "Sports Event Videography"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Drone Photographer and Videographer"
+        }
       }
     </script>
   </head>
@@ -38,13 +48,15 @@
       <div class="header-inner">
         <a class="brand" href="#home" aria-label="Sofie, back to top">
           <span class="brand-mark" aria-hidden="true">S</span>
-          <span class="brand-name">Sofie<span>Aerial artist</span></span>
+          <span class="brand-name">Sofie<span>Drone photography</span></span>
         </a>
-        <nav aria-label="Primary navigation">
+        <nav aria-label="Main navigation">
           <ul class="nav-list">
             <li><a href="#about">About me</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#upcoming-shows">Upcoming shows</a></li>
+            <li><a href="#career">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#upcoming-shows">Upcoming</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -53,24 +65,30 @@
     <main id="main-content">
       <section class="page-section hero" id="home" aria-labelledby="hero-title">
         <div class="section-inner hero-layout">
-          <article class="hero-copy">
-            <p class="eyebrow">A new perspective</p>
-            <h1 id="hero-title">The sky is closer than you think.</h1>
+          <div class="hero-copy">
+            <p class="eyebrow">Drone photographer &amp; videographer</p>
+            <h1 id="hero-title">See the world <span>from above.</span></h1>
             <p class="hero-intro">
-              Thoughtful flights, beautiful views, and a little wonder from
-              above.
+              I create cinematic aerial photography and video that helps
+              properties, businesses, and sporting events tell their story from
+              a completely different perspective.
             </p>
-            <a class="text-link" href="#about">
-              Get to know my work <span aria-hidden="true">&#8594;</span>
-            </a>
-          </article>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#portfolio"
+                >Explore my work</a
+              >
+              <a class="button button-secondary" href="#contact"
+                >Work with me</a
+              >
+            </div>
+          </div>
           <figure class="hero-figure">
             <img
-              src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
-              alt="A drone prepared for flight above an open landscape"
+              src="https://images.unsplash.com/photo-1506947411487-a56738267384?auto=format&amp;fit=crop&amp;w=1500&amp;q=88"
+              alt="Drone ready to capture an aerial view"
               fetchpriority="high"
             />
-            <figcaption>Finding a fresh point of view</figcaption>
+            <figcaption><span>01 / 03</span> Aerial storytelling</figcaption>
           </figure>
         </div>
         <a class="scroll-cue" href="#about" aria-label="Scroll to About me">
@@ -81,88 +99,221 @@
       <section
         class="page-section about"
         id="about"
-        aria-labelledby="about-title" 
+        aria-labelledby="about-title"
       >
         <div class="section-inner about-layout">
           <header class="section-heading">
-            <p class="eyebrow">01 / About me</p>
-            <h2 id="about-title">A different way of seeing.</h2>
+            <p class="eyebrow">A little about me</p>
+            <h2 id="about-title">A passion for perspective.</h2>
+            <figure class="about-photo">
+              <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                alt="Mountain lake and forest seen from above"
+                loading="lazy"
+              />
+              <figcaption>Above &amp; beyond</figcaption>
+            </figure>
           </header>
           <article class="about-article">
             <p class="lead">
-              I'm Sofie, a drone pilot drawn to the details that change when you
-              see a place from above.
+              I'm Sofie, a drone photographer and videographer who loves turning
+              ordinary moments into extraordinary perspectives.
             </p>
             <p>
-              I create considered aerial imagery and live flight experiences,
-              pairing careful planning with a curious eye. Every flight starts
-              on the ground: understanding the place, its people, and the story
-              worth bringing into view.
+              What started as a passion for flying and photography has grown
+              into a creative service focused on helping people and businesses
+              see their stories from a new angle.
             </p>
-            <p class="signature">Curiosity, with a view.</p>
+            <p>
+              From showcasing a beautiful property to creating social media
+              content for a growing business or capturing the energy of a live
+              sporting event, I bring a cinematic eye to every project.
+            </p>
+            <div class="about-stats" aria-label="Service highlights">
+              <div><strong>4K</strong><span>Aerial video</span></div>
+              <div><strong>3</strong><span>Core services</span></div>
+              <div><strong>&infin;</strong><span>Creative ideas</span></div>
+            </div>
           </article>
         </div>
       </section>
 
       <section
-        class="page-section career"
+        class="page-section services"
         id="career"
         aria-labelledby="career-title"
       >
-        <div class="section-inner career-layout">
-          <article class="career-copy">
-            <p class="eyebrow">02 / Career</p>
-            <h2 id="career-title">A practice built around flight.</h2>
+        <div class="section-inner section-column">
+          <header class="section-heading centered-heading">
+            <p class="eyebrow">Career &amp; services</p>
+            <h2 id="career-title">What I can capture for you.</h2>
             <p class="section-copy">
-              From the first plan to the final frame, each project is shaped
-              with care for its setting and a clear creative purpose.
+              From marketing content to unforgettable event footage, my services
+              are designed to make your project stand out.
             </p>
-            <ul class="work-list" aria-label="Areas of work">
-              <li>Aerial film and photography</li>
-              <li>Live flight demonstrations</li>
-              <li>Creative event collaborations</li>
-            </ul>
-          </article>
-          <figure class="career-figure">
-            <img
-              src="https://images.unsplash.com/photo-1506947411487-a56738267384?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
-              alt="A drone in flight against a clear sky"
-              loading="lazy"
-            />
-            <figcaption>Careful work, from takeoff to final frame</figcaption>
-          </figure>
+          </header>
+          <div class="services-grid">
+            <article class="service-card">
+              <p class="service-number">01 <span> / 03</span></p>
+              <span class="service-icon" aria-hidden="true">&#8962;</span>
+              <h3>Real estate</h3>
+              <p>
+                Give properties the attention they deserve with professional
+                aerial photography and cinematic video. Perfect for listings,
+                luxury properties, land, commercial spaces, and developments.
+              </p>
+              <a href="#contact"
+                >Book real estate content
+                <span aria-hidden="true">&#8594;</span></a
+              >
+            </article>
+            <article class="service-card">
+              <p class="service-number">02 <span> / 03</span></p>
+              <span class="service-icon" aria-hidden="true">&#9678;</span>
+              <h3>Business content</h3>
+              <p>
+                Purchase short, beautiful aerial clips for your website, social
+                media, advertising campaigns, and promotional content.
+              </p>
+              <a href="#contact"
+                >Create content <span aria-hidden="true">&#8594;</span></a
+              >
+            </article>
+            <article class="service-card">
+              <p class="service-number">03 <span> / 03</span></p>
+              <span class="service-icon" aria-hidden="true">&#9670;</span>
+              <h3>Live sporting events</h3>
+              <p>
+                Capture the scale, movement, and energy of sporting events with
+                dynamic aerial footage that brings a fresh perspective.
+              </p>
+              <a href="#contact"
+                >Capture your event <span aria-hidden="true">&#8594;</span></a
+              >
+            </article>
+          </div>
         </div>
       </section>
 
       <section
-        class="page-section shows"
-        id="upcoming-shows"
-        aria-labelledby="shows-title"
+        class="page-section portfolio"
+        id="portfolio"
+        aria-labelledby="portfolio-title"
       >
-        <div class="section-inner shows-layout">
-          <header class="section-heading">
-            <p class="eyebrow">03 / Upcoming shows</p>
-            <h2 id="shows-title">Meet me where the sky opens up.</h2>
+        <div class="section-inner section-column">
+          <header class="section-heading portfolio-heading">
+            <div>
+              <p class="eyebrow">Selected work</p>
+              <h2 id="portfolio-title">From the sky to your screen.</h2>
+            </div>
+            <p class="portfolio-note">A few frames from the field</p>
           </header>
-          <article class="show-announcement" aria-label="Upcoming show dates">
-            <p class="show-status">New dates on the horizon</p>
-            <p>
-              Live flight dates and locations are being planned now. Details
-              will be shared here as soon as they are confirmed.
+          <div class="portfolio-grid">
+            <article class="portfolio-card">
+              <img
+                src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                alt="Modern architecture viewed from overhead"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <p>Real estate</p>
+                <h3>Property from a new perspective.</h3>
+              </div>
+            </article>
+            <article class="portfolio-card">
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                alt="Winding road crossing a dramatic landscape"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <p>Business</p>
+                <h3>Content that gets attention.</h3>
+              </div>
+            </article>
+            <article class="portfolio-card">
+              <img
+                src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                alt="Football match in progress on a green field"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <p>Sporting events</p>
+                <h3>Capture the energy.</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="page-section projects"
+        id="upcoming-shows"
+        aria-labelledby="upcoming-title"
+      >
+        <div class="section-inner projects-layout">
+          <header class="section-heading">
+            <p class="eyebrow">Upcoming projects</p>
+            <h2 id="upcoming-title">Where I'll be flying next.</h2>
+            <p class="section-copy">
+              Sofie is currently available for new photography, videography, and
+              aerial content projects.
             </p>
-          </article>
+          </header>
+          <div class="project-list">
+            <article class="project-item">
+              <div class="project-date"><span>01</span><small>OPEN</small></div>
+              <div class="project-info">
+                <h3>Real estate sessions</h3>
+                <p>Residential &amp; commercial</p>
+              </div>
+              <span class="project-status">Available</span>
+            </article>
+            <article class="project-item">
+              <div class="project-date"><span>02</span><small>OPEN</small></div>
+              <div class="project-info">
+                <h3>Business content days</h3>
+                <p>Short-form aerial video</p>
+              </div>
+              <span class="project-status">Available</span>
+            </article>
+            <article class="project-item">
+              <div class="project-date"><span>03</span><small>BOOK</small></div>
+              <div class="project-info">
+                <h3>Sporting events</h3>
+                <p>Live aerial coverage</p>
+              </div>
+              <span class="project-status">Inquire</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner">
+          <p class="eyebrow">Let's work together</p>
+          <h2 id="contact-title">
+            Have a project<br />in the <span>air?</span>
+          </h2>
+          <p>
+            Tell me what you're working on and let's create something worth
+            looking up to.
+          </p>
+          <a class="button button-primary" href="mailto:hello@sofiedrone.com"
+            >Get in touch <span aria-hidden="true">&#8599;</span></a
+          >
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>
-        <a href="#home">Sofie</a> <span aria-hidden="true">·</span> A view from
-        above
+        <a href="#home" aria-label="Return to Sofie's home page"
+          >SOFIE<span>.</span></a
+        >
       </p>
-      <a href="#home" class="back-to-top">
-        Back to top <span aria-hidden="true">&#8593;</span>
-      </a>
+      <p>Drone photography &amp; videography</p>
+      <p class="copyright">&copy; 2026 Sofie. All rights reserved.</p>
     </footer>
   </body>
 </html>
